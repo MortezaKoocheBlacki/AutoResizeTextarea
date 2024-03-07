@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Signika;
+    src: url(../Fonts/Signika-VariableFont.ttf);
+}
+*, *::before, *::after{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4571EF 0%, #AC34E7 100%);
+    font-family: Signika;
+}
+
+.wrapper{
+    width: 470px;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 25px 25px 30px;
+}
+
+.wrapper h2{
+    color: #4571EF;
+    font-size: 28px;
+    text-align: center;
+}
+.wrapper textarea{
+    width: 100%; 
+    height: 60px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #BFBFBF;
+    outline: none; resize: none;
+    margin-top: 20px;   
+    max-height: 330px;
+}
+
+textarea:is(:focus, :valid){
+    border-color: #4571EF;
+    padding: 15px;
+    border-width: 2px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
